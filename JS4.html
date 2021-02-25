@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id = "list"></div>
+    <script>
+     //    створити функцію яка виводить масив
+     //   let array = [1,2,3,44,5,7]
+     //   function printArray(array){
+     //       console.log(array)
+     //   }
+    //  printArray(array);
+
+    // створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
+   // function createArray(lenght, min, max){
+    //    let array = [];
+    //    for(let i = 0; i < lenght; i++){
+    //        array.push(Math.floor(Math.random() *(max-min)+ min))
+    //    }
+    //    return array;
+    //}
+    //const array1 = createArray(10, 10, 100);
+   // printArray(array1)
+
+
+  // function ReturnMin(A, B, C){
+  //     let min;
+  //     if (A <= B && A <= C) min = A;
+  //     if (B <= A && B <= C) min = B; 
+   //    if(C <+ A && C <= B) min = C;
+//
+   //    console.log("min",min)
+   //    return min;
+  // }
+ // const min = ReturnMin(6, 5, 3);
+  //console.log(min)
+
+  //function RetunrMax(a, b, c){
+ //     let max;
+  //    if(b <= a && c <= a) max = a;
+  //    if(a <= b && c<= b) max = b;
+  //    if(b <=c && a <= c) max = c;
+
+  //    console.log("max", max)
+   //   return max;
+  //}
+  //const max = RetunrMax(3, 51, 43)
+
+ // function ArrayPrintMax(){
+  //    console.log(arguments);
+  ////    let min = arguments[0];
+   //   let max = arguments[0];
+    //  for(const item of arguments){
+    //      if(item > max) max = item;
+    //      if(item < min) min = item;
+    //  }
+    //  console.log("max",max);
+    //  return min;
+  //}
+  // const min = ArrayPrintMax(1,2,3,4,5)
+  //console.log("min", min)
+
+      
+     //   const MyFunck = (array) =>{
+      //      let max = array[0];
+      //      for(const item of array){
+      //          if(max < item) max = item
+      //      }
+      //      return max;
+      //  }
+       // const MyFunck1 = MyFunck([2,4,5,6,7,11223])
+       // console.log(MyFunck1)
+
+          //function returnMaxfromArray(array){
+        //   let min = array[0];
+         //  for(const item of array){
+        //        if(min > item) min = item;
+         //   }
+        //   return max;
+
+        //}
+       // const max = returnMaxfromArray([2,4,5,6,7,8,9])
+       // console.log(min)
+
+
+       //function average(array){
+       //    let sum = 0;
+       //    for(const item of array){
+       //        sum += item;
+       //    }
+       //    return sum/array.length;
+      // }
+       //const average1 =  average([2,2,3,4,5]);
+       //console.log("average", average1)
+       
+
+    //  function My(array){
+     //     let sum = 0;
+     //     for(const item of array){
+     //         sum += item;
+     ///     }
+      //    return sum;
+      //}
+     // const My1 = My([2,2,2,2])
+      //console.log(My1)
+
+      const users = [
+ {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+//function countFields(arrayObj){
+   // let count = 0;
+   // for(const item of arrayObj){
+        //if(typeof item === "object"){
+        //    count++;
+      //  }
+    //}
+  //  return count;
+//}
+//const number = countFields(users)
+//console.log(number)
+//function countField(arrayObj){
+//    let count = 0
+///    for(const item of arrayObj){
+ //       if(typeof item === 'object' && !Array.isArray(item)){
+ //           for(const key in item){
+  //              count++;
+  //          }
+  //      }
+  //  }
+  ////  return count;
+//}
+//const number = countField(users)
+//console.log(number)
+
+
+//function splitArray(array1, array2){
+ //   let result = [];
+  //  for(let i = 0; i < array1.length; i++){
+ //     result.push(array1[i]+array2[i]);
+ //   }
+ //   return result;
+//}
+ //const slpitArray1 = splitArray([1,2,3,4], [2,3,4,5]);
+// console.log(slpitArray1);
+
+
+//-------not work, why?-----/////
+//let array1 = [1,2,3,4];
+//function changeElement(arr, index){
+//  let array = [...arr]
+//  if(index < array.length-1){
+//    let temp = array[index];
+ // array[index] = array[index+1];
+ // array[index+1] = temp;
+ // }
+//  return array;
+//}
+//const changeElement1 = changeElement(array1);
+//console.log(array1);
+//console.log(changeElement1);
+
+
+//function Llb(array){
+//  let zerro = [];
+//  let number = [];
+//  for(const item of array){
+//    if (item === 0){
+//      zerro.push(0);
+//    } else 
+//    number.push(item);
+//  }
+//  return number.concat(zerro);
+//}
+//  console.log(Llb([1,0,6,0,3]));
+//  console.log(Llb([0,1,2,3,4]));
+//  console.log(Llb([0,0,1,0]));
+
+
+//function addDiv(message, typeTag){
+ // let tag = document.createElement(typeTag)
+ // tag.innerHTML = message || "Hello world"
+ // document.body.appendChild(tag);
+//}
+//addDiv("LO", 'div')
+///
+
+
+//function addList(arrayUsers, idTag){
+//  const block = document.getElementById(idTag);
+//  const ul = document.createElement('ul');
+//  for(let i = 0; i < arrayUsers.length; i++){
+//    const user = arrayUsers[i];
+//    const li = document.createElement('li');
+//    li.innerHTML = `${i} - ${user.name}`;
+//    ul.appendChild(li);
+ // }
+ // block.appendChild(ul);
+//}
+//addList(users, "list")
+
+//function addList(arrayUsers, idTag){
+//  const block = document.getElementById(idTag);
+//  for(let i = 0; i < arrayUsers.length; i++){
+
+//    const user = arrayUsers[i];
+//    const div = document.createElement('div');
+//    const name = document.createElement('h2')
+//    const username = document.createElement('h4');
+//   const email = document.createElement('h2');
+
+
+//    name.innerHTML = `name:  ${user.name}`;
+//    email.innerHTML = `email: ${user.email}`;
+//    name.innerHTML = `surname : ${user.username}`;
+
+
+//    div.appendChild(name);
+//    div.appendChild(email);
+//    div.appendChild(username);
+//    block.appendChild(div);
+//  }
+  
+//}
+//addList(users, "list")
+
+
+
+
+    </script>
+</body>
+</html>
